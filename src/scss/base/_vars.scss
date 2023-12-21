@@ -1,20 +1,24 @@
 :root {
-	--container-width: 1200px;
-	--container-padding: 15px;
+	--container-width: 1220px;
+	--container-padding: 30px;
 
-	--font-main: 'Poppins', sans-serif;
-	--font-accent: 'Playfair Display', serif;
+	--font-main: 'Roboto', sans-serif;
+	--font-title: 'Alexandra Zeferino One', sans-serif;
+	//--font-accent: 'Playfair Display', serif;
+
+	--font-size-base: 16px;
+	--font-color-title: #656565;
 
 	--page-bg: #fff;
-	--text-color: #000;
+	--text-color: #4D4D4D;
 	--accent: #ac182c;
 
-    --laptop-size: 1199px;
-	--tablet-size: 959px;
-	--mobile-size: 599px;
+   // --laptop-size: 1199px;
+	//--tablet-size: 959px;
+//--mobile-size: 599px;
 }
-
+/*
 .dark {
     --page-bg: #252526;
     --text-color: #fff;
-}
+}*/

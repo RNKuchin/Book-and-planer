@@ -1,10 +1,13 @@
 .header {
-	background-color: rgb(195, 220, 231);
-	padding: 50px 0;
-
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+  padding: 86px 0 0 0;
+  &__nav{
+	margin-bottom: 118px;
+  }
+  &__name {
+    color: var(--font-color-title);
+    font-family: var(--font-title);
+	font-size: 100px;
+	font-weight: 400;
+	line-height: 100%; /* 100% */
+  }
 }
