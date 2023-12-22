@@ -1,14 +1,26 @@
 .footer {
-	background-color: rgb(62, 62, 62);
-	padding: 50px 0;
-	font-size: 32px;
-    color: #fff;
-
-	h1 {
-		font-size: 32px;
-	}
-
-	@media (max-width: 1200px) {
-		font-size: 26px;
-	}
+  background-color: var(--bg-dark);
+  padding: 88px 0 119px 0;
+  color: var(--bg-light);
+  & * a {
+    color: var(--bg-light);
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  &__copy {
+    opacity: 0.6;
+  }
+  &__nav * a{
+	text-align: right;
+	text-decoration-line: underline;
+  }
 }

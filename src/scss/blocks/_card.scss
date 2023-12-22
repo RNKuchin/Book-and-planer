@@ -1,0 +1,16 @@
+.card {
+  border-radius: 30px;
+  border: 3px solid var(--bg-button);
+  background: var(--bg-light);
+  padding: 56px 0;
+  max-width: 360px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+  }
+}

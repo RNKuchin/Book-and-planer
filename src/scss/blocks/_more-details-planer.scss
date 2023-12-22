@@ -1,0 +1,68 @@
+.more-details-planer {
+  &__container {
+    padding: 76px 54px 46px 60px;
+    border-radius: 30px;
+    border: 3px solid var(--bg-button);
+    background: var(--bg-light);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: -115px;
+      top: calc(50% - 25px);
+      transform: translateY(-50%) rotate(32.42deg);
+      width: 180px;
+      height: 228px;
+      background-image: url(../img/planer.png);
+    }
+  }
+  &__row {
+    display: flex;
+    gap: 45px;
+    justify-content: space-between;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__list-text {
+    max-width: 600px;
+  }
+  &__list-text b {
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 18px;
+    display: block;
+  }
+  &__list-text b:last-of-type {
+    margin-bottom: 33px;
+    display: block;
+  }
+  &__list-text li {
+    padding-left: 30px;
+    margin-bottom: 5px;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background-color: var(--bg-button);
+      top: 9px;
+      left: 0;
+    }
+  }
+  &__list-text--check li {
+    &::after {
+      content: url(../img/check.svg);
+      background-color: transparent;
+      top: 0;
+    }
+  }
+  &__list-text--check ul {
+    margin-bottom: 24px;
+  }
+  &__footnote {
+    max-width: 386px;
+  }
+}

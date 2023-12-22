@@ -1,0 +1,14 @@
+.button {
+  border-radius: 30px;
+  background-color: var(--bg-button);
+  color: var(--bg-light);
+  font-weight: 400;
+  padding: 18px 40px;
+
+  &--link {
+    border-radius: 30px;
+    border: 3px solid var(--bg-button);
+    background: var(--bg-light);
+    color: var(--font-color-title);
+  }
+}
