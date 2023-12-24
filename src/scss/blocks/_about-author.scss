@@ -1,11 +1,12 @@
 .about-author {
+  padding-bottom: 90px;
   &__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
     gap: 30px;
   }
   &__text {
     text-align: left;
+    max-width: 570px;
     & p {
       margin-bottom: 15px;
     }
@@ -15,5 +16,31 @@
   }
   &__wrapper-btn {
     margin-top: 33px;
+  }
+  &__image {
+    max-width: 282px;
+    margin: 0 50px 0 auto;
+    & img {
+      border-radius: 30px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .about-author {
+    &__image {
+      flex-shrink: 0.2;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-author {
+    padding-bottom: 15px;
+    &__grid {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

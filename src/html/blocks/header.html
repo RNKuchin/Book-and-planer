@@ -1,4 +1,7 @@
 <header class="header">
+  <button class="mobile-nav-btn">
+    <div class="nav-icon"></div>
+  </button>
   <div class="container header__container">
     <nav class="nav header__nav">
       <ul class="nav__list">
@@ -23,11 +26,13 @@
         <button class="button header__button" type="button">
           Оформить предзаказ
         </button>
-        <a href="#" class="button button--link">Прочитать подробнее</a>
+        <a href="#" class="button header__button button--link"
+          >Прочитать подробнее</a
+        >
       </div>
       <div class="header__image">
         <img
-          src="../../img/book-and-planer.png"
+          src="../../img/book-and-planer.jpg"
           alt="Визуальное представление книги и планера"
           width="750"
           height="673"
@@ -35,6 +40,14 @@
       </div>
     </div>
     <div class="header__row">
+      <div class="header__author-img">
+        <img
+          src="./img/author-1.png"
+          alt="Автор продукта"
+          width="635"
+          height="542"
+        />
+      </div>
       <div class="header__text">
         <p>
           Тайм-менеджмент для всех и&nbsp;тайм-менеджмент для мам&nbsp;&mdash;
@@ -48,24 +61,8 @@
           информацию из&nbsp;планера до&nbsp;рождения малыша, чтобы успеть
           подготовиться заранее!
         </p>
-        <span>Елизавета Шац</span>
-      </div>
-      <div class="header__author-img">
-        <img
-          src="./img/author-1.png"
-          alt="Автор продукта"
-          width="635"
-          height="542"
-        />
+        <span>Елизавета Андреевна Шоцких</span>
       </div>
     </div>
-
-    <!--<div class="header__row">
-            <div class="logo">Logo</div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
-        </div>-->
   </div>
 </header>
-@@include('mobile-nav.html')

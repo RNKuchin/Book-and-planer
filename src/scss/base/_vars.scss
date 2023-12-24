@@ -1,7 +1,7 @@
 :root {
-  --container-width: 1220px;
+  --container-width: 1162px;
   --container-padding: 30px;
-
+  --index: calc(1vw + 1vh);
   --font-main: "Roboto", sans-serif;
   --font-title: "Alexandra Zeferino One", sans-serif;
   //--font-accent: 'Playfair Display', serif;
@@ -9,10 +9,13 @@
   --font-size-base: 16px;
   --font-color-title: #656565;
 
-  --bg-button: #e3b7b5;
+  --bg-button: #e9b384;
+  --bg-button-hover: #c88139;
   --bg-light: #fff;
   --bg-dark: #504f4f;
 
+  --border: 2px solid #e9b384;
+  --shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
   // --laptop-size: 1199px;
   //--tablet-size: 959px;
   //--mobile-size: 599px;
@@ -22,3 +25,8 @@
     --page-bg: #252526;
     --text-color: #fff;
 }*/
+@media (max-width:768px) {
+  :root{
+    --container-padding: 10px;
+  }
+}

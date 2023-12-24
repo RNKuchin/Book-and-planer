@@ -4,6 +4,13 @@
   color: var(--bg-light);
   & * a {
     color: var(--bg-light);
+    transition: ease-in 0.2s;
+    &:hover{
+      color: var(--bg-button);
+      & svg:hover{
+        fill: var(--bg-button);
+      }
+    }
   }
   &__container {
     display: flex;
@@ -22,5 +29,14 @@
   &__nav * a{
 	text-align: right;
 	text-decoration-line: underline;
+  }
+}
+
+@media (max-width:768px) {
+  .footer{
+    &__container{
+      align-items: center;
+      flex-wrap: wrap;
+    }
   }
 }
