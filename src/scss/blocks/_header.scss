@@ -5,36 +5,29 @@
   &::before {
     content: "";
     position: absolute;
-    //width: calc(var(--index)*1.4);
-
-    width: 1087px;
-    width: calc(var(--index) * 50);
-    height: 831px;
+    width: var(--bg-round-width);
+    height: var(--bg-round-height);
+    max-width: 1087px;
+    max-height: 831px;
     border-radius: 50%;
   }
   &::before {
-    top: -41px;
-    left: -326px;
-    left: calc(var(--index) * -15);
+    top: -4%;
+    right: 40%;
     background-color: #fdf8f8;
     z-index: -9;
   }
   &::after {
-    top: -41px;
-    right: -300px;
+    top: -4%;
+    left: 50%;
     background-color: #b7d2e2;
     z-index: -10;
-  }
-  &__descr {
   }
 
   &__grid {
     display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-template-columns: 1.5fr 1fr;
     column-gap: 60px;
-    //gap: 30px;
     align-items: center;
     position: relative;
     margin-bottom: 100px;
@@ -62,8 +55,6 @@
     }
   }
 
-  &__nav {
-  }
   &__name {
     color: var(--font-color-title);
     font-family: var(--font-title);
@@ -74,11 +65,11 @@
   &__title {
     margin-bottom: 30px;
     font-size: 12.5px;
-    &--smoll {
-      display: block;
-      font-weight: 400;
-      margin-bottom: 14px;
-    }
+  }
+  &-smoll {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 14px;
   }
   &__row {
     display: flex;
@@ -109,7 +100,7 @@
     & span {
       color: var(--font-color-title);
       font-family: var(--font-title);
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 400;
       line-height: 100%;
       display: block;
@@ -139,6 +130,12 @@
 }
 @media (max-width: 768px) {
   .header {
+    &::before {
+      top: 0;
+      right: 0;
+      width: calc(var(--bg-round-height) * 2);
+      height: calc(var(--bg-round-height) * 2);
+    }
     &__grid {
       grid-template-columns: 1fr;
       gap: 30px;
@@ -146,7 +143,7 @@
     &__image {
       margin: 0 auto;
       max-width: 270px;
-      &::before{
+      &::before {
         bottom: -15px;
         left: -15px;
       }
@@ -155,13 +152,18 @@
       text-align: left;
     }
 
-    &__row{
+    &__row {
       flex-wrap: wrap;
-      padding: 40px 20px ;
+      padding: 40px 20px;
     }
-    &__author-img{
+    &__author-img {
       max-width: 350px;
       margin: 0 auto;
+    }
+    &__text {
+      & p:last-of-type {
+        margin-bottom: 50px;
+      }
     }
   }
 }

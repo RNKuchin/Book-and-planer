@@ -70,3 +70,14 @@ npm install --save-dev gulp-changed
 web-p
 
 npm i gulp-webp gulp-webp-html gulp-webp-css --save-dev
+
+          <picture>
+            <source srcset="./img/cover-1.webp, cover-1@2x.webp 2x" />
+            <source srcset="./img/cover-1.png, cover-1@2x.png 2x" />
+            <img
+              src="./img/cover-1.png"
+              alt="Обложка планера, книги и тетради"
+              width="336"
+              height="222"
+            />
+          </picture>

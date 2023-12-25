@@ -4,20 +4,21 @@
   &::after {
     content: "";
     position: absolute;
-    width: 1087px;
-    height: 831px;
+    width: var(--bg-round-width);
+    height: var(--bg-round-height);
+    max-width: 1087px;
+    max-height: 831px;
     border-radius: 50%;
     background-color: #b7d2e2;
     z-index: -10;
   }
   &::before {
-    left: -328px;
-    top: -59px;
+    right: 50%;
+    top: -5%;
   }
   &::after {
-    right: -300px;
-    bottom: -300px;
-    //transform: translateX(300px);
+    left: 50%;
+    bottom: -10%;
   }
   &__container {
     padding: 76px 54px 46px 60px;
