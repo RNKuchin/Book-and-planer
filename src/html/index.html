@@ -13,9 +13,13 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
+
   <body>
-    @@include('blocks/header.html') @@include('blocks/more-details-planer.html')
-    @@include('blocks/cards.html') @@include('blocks/free-materials.html')
+    @@include('blocks/header.html')
+    <main>
+      @@include('blocks/more-details-planer.html')
+      @@include('blocks/cards.html') @@include('blocks/free-materials.html')
+    </main>
     @@include('blocks/footer.html')
     <script src="./js/index.bundle.js"></script>
   </body>
