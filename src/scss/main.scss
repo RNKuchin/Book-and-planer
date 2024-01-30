@@ -1,39 +1,23 @@
-// // базовые подключения
-// @import "vars";
-// @import "mixins";
-// @import "fonts";
-// @import "settings";
-
-// // подключения компонентов страницы
-// @import "./components/header";
-
-// // тестовые стили, удалите их
-// .page__body {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: var(--vh);
-// }
 /* Base */
-@import "./base/fonts";
-@import "./base/vars";
-@import "./base/base";
-@import "./base/utils";
-@import "./base/containers";
-@import "./base/sticky-footer";
+@import './base/fonts';
+@import './base/vars';
+@import './base/base';
+@import './base/utils';
+@import './base/containers';
+@import './base/sticky-footer';
 
 /* Blocks */
 // @import "./blocks/*.scss";
-@import "./blocks/_about-author.scss";
-@import "./blocks/_button.scss";
-@import "./blocks/_card-material.scss";
-@import "./blocks/_card.scss";
-@import "./blocks/_cards.scss";
-@import "./blocks/_footer.scss";
-@import "./blocks/_free-materials.scss";
-@import "./blocks/_header.scss";
-@import "./blocks/_logo.scss";
-@import "./blocks/_mobile-nav.scss";
-@import "./blocks/_more-details-planer.scss";
-@import "./blocks/_nav-icon.scss";
-@import "./blocks/_nav.scss";
+@import './blocks/_about-author.scss';
+@import './blocks/_button.scss';
+@import './blocks/_card-material.scss';
+@import './blocks/_card.scss';
+@import './blocks/_cards.scss';
+@import './blocks/_footer.scss';
+@import './blocks/_free-materials.scss';
+@import './blocks/_header.scss';
+@import './blocks/_logo.scss';
+@import './blocks/_mobile-nav.scss';
+@import './blocks/_more-details-planer.scss';
+@import './blocks/_nav-icon.scss';
+@import './blocks/_nav.scss';
